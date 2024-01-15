@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áo dài</title>
+    <link rel="shortcut icon" href="./img/quanao1.png" />
+    <link rel="stylesheet" href="./css/detail.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+ 
+</head>
+
+
+<body>
+    <header class="container-header">
+       <div class="header_image">
+        <img src="https://bizweb.dktcdn.net/100/165/234/themes/895023/assets/img-before-head.png?1676342620406" alt="" class="header_image_den" style="height: 200px;">
+        
+    
+    </div>
+    <div class="header_title">
+        <img src="https://bizweb.dktcdn.net/100/165/234/themes/895023/assets/logo.png?1676342620406" alt="" class="header_logo"> 
+    </div>
+
+    <div class="header_User">
+        <span href="sign-up.html" class="header_DangKy">Đăng ký</span>
+        <span href="sign-in.html" class="header_DangNhap">Đăng nhập</span>
+    </div>
+
+    <form action="" class="search">
+        <div class="content-input">
+            <i class="fas fa-search"></i>
+            <input type="text" name="input" placeholder="Tìm kiếm sản phẩm" id="inputFiled">
+            <i class="fas fa-times"></i>
+        </div>
+    </form>
+    
+    
+    </header>
+
+    <!-- section slider show -->
+    <section class="main-content swiper mySwiper">
+        <div class="content">
+       
+            <ul class="header-menu">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="QuanAo.html">Quần áo</a></li>
+                <li><a href="Ruou.html">Rượu</a></li>
+                <li><a href="BanhKeo.html">Bánh Kẹo</a></li>
+                <li><a href="QuaBieu.html">Quà Biếu</a></li>
+                <li><a href="CayCanh.html">Cây Cảnh</a></li>       
+                <li><a href="./Game/index.html">Game</a></li>                     
+            </ul>
+
+          
+        </div>
+        <div class="main-slider swiper-wrapper">
+            <img class="swiper-slide" src="./img/slide1.webp" alt="">
+            <img class="swiper-slide" src="./img/slide2.webp" alt="">
+            <img class="swiper-slide" src="./img/slide3.webp" alt="">
+            <img class="swiper-slide" src="./img/slide4.webp" alt="">
+            <img class="swiper-slide" src="./img/slide5.webp" alt="">
+            <img class="swiper-slide" src="./img/slide6.webp" alt="">
+            <img class="swiper-slide" src="./img/slide7.webp" alt="">
+        </div>
+
+
+        <div class="navigation-button">
+            <span class="dot active" onclick="changeSlide(0)"></span>
+            <span class="dot" onclick="changeSlide(1)"></span>
+            <span class="dot" onclick="changeSlide(2)"></span>
+            <span class="dot" onclick="changeSlide(3)"></span>
+            <span class="dot" onclick="changeSlide(4)"></span>
+            <span class="dot" onclick="changeSlide(5)"></span>
+            <span class="dot" onclick="changeSlide(6)"></span>
+        </div>
+    </section>
+
+
+<body style="height: 1000px; background-color: #efefef; " class="detail">
+    <div class="container">
+        <div class="row productBoy-sub">
+            <div class="col-md-4"> 
+                <img src="./img/quanao1.png" alt="" class="imgCore">  
+            </div>
+
+            <div class="col-md-8">
+                <table class="table table-striped" >
+                    <thead>
+                      <tr class="table-warning">
+                        <th scope="col">Tính Chất</th>
+                        <th scope="col">Thông Tin</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Tên sản phẩm</th>
+                        <td>Mũ Hàn Quốc <br> Mũ tròn cho bé </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Chất Liệu</th>
+                        <td>Cotton, Len</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Giá</th>
+                        <td>59.000 &#8363;</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Thương hiệu</th>
+                        <td>S&Q - Thời Trang Cho Bé</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Xuất xứ</th>
+                        <td>Việt Nam</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Đặc Biệt</th>
+                        <td>
+                          Miễn phí giao hàng toàn quốc <br>
+                          Giảm 59k cho đơn từ 1tr <br>
+                          Đổi/Trả hàng trong vòng 60 ngày nếu không ứng ý sản phẩm
+                        </td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                  <div class="bot">
+                    <select name="sele" id="">
+                      <option value="">Size S</option>
+                      <option value="">Size M</option>
+                      <option value="">Size L</option>
+                      
+                    </select>
+
+                    <input type="number" value="1">
+                    <button>
+                      <img src="./img/cart-icon.png" alt="">
+                        Thêm vào giỏ hàng
+                    </button>
+                  </div>
+            </div>
+        </div>
+        
+        <div class="product-item ">
+
+            <h3>Có Thể Bạn Sẽ Thích</h3>
+
+            <ul class="main-product">
+                <li>
+                    <img src="./img/quanao1.png" alt="">
+                    <p>Áo dài cách tân cổ yếm</p>
+                    <span><Strong>2.250.000₫</Strong>
+                        <strike>2.500.000₫</strike>
+                        <small>-10%</small>
+                    </span>
+                </li>
+                <li>
+                    <img src="./img/quanao2.png" alt="">
+                    <p>Váy tay phồng</p>
+                    <span>
+                        <strong>1.700.000₫</strong>
+                        <strike>2.000.000₫</strike>
+                        <small>-15%</small>
+                    </span>
+                </li>
+                <li>
+                    <img src="./img/quanao3.png" alt="">
+                    <p>Áo dài họa tiết</p>
+                    <span>
+                        <strong>2.880.000₫</strong>
+                        <strike>2.400.000₫</strike>
+                        <small>-13%</small>
+                    </span>
+                </li>
+                <li>
+                    <img src="./img/quanao4.png" alt="">
+                    <p>Áo yếm</p>
+                    <span>
+                        <strong>2.116.000₫</strong>
+                        <strike>2.300.000₫</strike>
+                        <small>-8%</small>
+                    </span>
+                </li>            
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

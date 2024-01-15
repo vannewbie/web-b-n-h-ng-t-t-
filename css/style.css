@@ -1,0 +1,473 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f1542dbd;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: x-large;
+}
+ul {
+    list-style: none;
+}
+
+
+.header_User{
+    align-items: center;
+    margin-right: 45px;
+    
+     
+}
+.header_DangKy{
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 2px solid #D3D3D3;
+}
+.header_User span{
+   font-size: 18px;
+   color: white;
+   font-weight: 550;
+
+}
+
+.header_User span:hover{
+       color: rgba(118,76,41,.8);
+       cursor: pointer;
+}
+
+.container-header {
+   width: 100%;
+   height: 120px;
+   background-color: #cd361E;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;  
+}
+
+.header_title{
+ height: 50%;
+ width: 150px;
+ display: flex;
+ margin-right: 100px;
+ align-items: center;
+}
+.header_image {
+   max-width: 50%;
+   height: 150px;
+   display: block;
+
+   z-index: 10000;
+   
+}
+
+
+.header_logo{
+    max-width: 100%;
+    max-height: 100px;
+}
+.content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    min-width: 1024px;
+    margin: auto;
+    height: 65px;
+    background-color: #eC3323;
+}
+
+.container-header .logo {
+    margin-right: 15px;
+}
+
+.container-header .logo img{   
+    display: inline-block;
+    width: 100%;
+    height: 65px;
+}
+/* css menu */
+.header-menu {
+    overflow: auto;
+    width: 65%;
+    margin-left: 190px;
+    margin: auto;
+}
+
+.header-menu li a:hover {
+    color: #ffee00bd;
+}
+
+.header-menu li+li{
+    margin-left: 25px;
+}
+.header-menu > li {
+    float: left;
+    width: 12%;
+    transition: opacity .2s cubic-bezier(.645,.045,.355,1);
+}
+.header-menu > li > a {
+    color: #fff;
+    display: block;
+    overflow: hidden;
+
+    text-align: center;
+    font-size: 15px;
+    align-items: center;
+}
+
+/* right icon */
+.icon-header {
+    margin-right: 10px
+}
+.icon-header > a {
+    margin-right: 0;
+    display: inline-block;
+    background-color: #3e3e3f;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+.icon-header > a > i {
+    color: #fff;
+    font-size: 14px;
+}
+/* form input css */
+.search {
+    display: none;
+    width: 600px;
+    transition: opacity .2s cubic-bezier(.645,.045,.355,1);
+    animation: Fade;
+    left: 0;
+    right: 0;
+    top: -5px;
+    z-index: 999;
+    padding: 20px 0;
+    height: 64px;
+    margin: auto;
+    position: absolute;
+}
+.search .content-input {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.content-input > .fa-search {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 15px 0 15px;
+    
+    
+    position: absolute;
+    cursor: pointer;
+    top: 25%;
+}
+.content-input > .fa-times {
+    color: #fff;
+    font-size: 25px;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    top: 20%;
+  
+}
+.content-input > input {
+    width: 100%;
+    overflow: hidden;
+    float: right;
+    border-top-right-radius: 21px;
+    border-bottom-right-radius: 21px;
+    border-top-left-radius: 21px;
+    border-bottom-left-radius: 21px;
+    border: 0;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 60px;
+    outline: none;
+    background:#E94949;
+    color: #fff;
+    transition: .65s ease-out;
+    animation: Fade;
+    
+}
+input::placeholder {
+    color: rgba(0, 0, 0, 0.2); 
+    display: block;
+    font-weight: 600;
+ 
+    
+}  
+/*slide show css */
+.main-content .main-slider {
+    width: 100%;
+    height: 421px;
+ 
+    position: relative;
+}
+.main-slider > img {
+    width: 100%;
+    height: 421px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.main-slider > img:first-child{
+    z-index: 1;
+}
+.main-slider > img:first-child(6){
+    z-index: 0;
+}
+.navigation-button{
+    text-align: center;
+    position: relative;
+}
+.dot {
+    margin-right: 10px;
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #bbb;
+}
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+/* main item product */
+.item-product {
+    max-width: 1200px;
+    min-width: 1024px;
+    margin: auto;
+}
+.main-item {
+    display: flex;
+    align-items: center;
+    width: 103%;
+    margin: 50px auto 80px;
+}
+.main-item > .item {
+    text-align: center;
+    width: 25%;
+    background-color: #323232;
+    height: 220px;
+    position: relative;
+    border-radius: 13px;
+    margin: 20px;
+    transition: 0.3s all ease;
+}
+.main-item > .item:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.main-item > .item > img {
+    margin: 45px 0 5px 0;
+    height: 110px;
+}
+.main-item > .item  > p {
+    margin-top: 10px;
+    color: #fff;
+}
+/* product card css */
+.product-item {
+    display: block;
+    margin-top: 35px;
+    width: 1200px;
+    margin: auto;
+}
+.product-item .name-product {
+    text-align: center;
+    color: #fff;
+    font-size: 38px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.product-item .name-product > img{
+    height: 35px;
+}
+.product-item .main-product {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 45px auto 88px;
+}
+.product-item .main-product > li {
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    height: 420px;
+    width: 295px;
+    background-color: #323232;
+    border-radius: 20px;
+    margin: 0 15px;
+    transition: 0.3s all ease;
+}
+.main-product > li:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.main-product > li > img {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    height: 280px;
+}
+.main-product > li > p {
+    margin-top: 0px;
+    margin-bottom: 18px;
+    color: #fff;
+}
+.main-product > li > span {
+    color: #fff;
+}
+/* maccss */
+.macbook .mac-product > li > img {
+    margin-bottom: 0;
+}
+.macbook .mac-product > li > p {
+    font-size: 14px !important;
+}
+/* button next and previous css */
+.previous {
+    position: absolute;
+    left: 6%;
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 25px;
+    background-color: #323232;
+    color: #bbb;
+    user-select: none;
+}
+.previous > span {
+    top: 10px;
+    position: absolute;
+    left: 15px;
+}
+.previous::before {
+    border-top-left-radius: 10px;
+    top:23.4px;
+    right: 15px;
+    height: 2px;
+    width: 16px;
+    background-color: #bbb;
+    content: "";
+    position: absolute;
+}
+.next {
+    position: absolute;
+    right: 4%;
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 28px;
+    background-color: #323232;
+    color: #bbb;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+.next:hover {
+    background-color: #717171;
+}
+.next > span {
+    top: 8px;
+    position: absolute;
+    left: 20px;
+}
+.next::before {
+    border-top-left-radius: 10px;
+    top:23.4px;
+    right: 18px;
+    height: 2px;
+    width: 16px;
+    background-color: #bbb;
+    content: "";
+    position: absolute;
+}
+
+/*  */
+.airpod-item .airpod-product > li {
+    height: 450px !important;
+}
+.airpod-item .airpod-product > li > .price-sale {
+    margin-top: 10px;
+    color: orange;
+    font-size: 13px;
+}
+/* tekzone css */
+.tekzone-item .tekzone-product > li {
+    width: 393px !important; 
+    height: 320px;
+}
+.tekzone-item .tekzone-product > li > img {
+    width: 100%;
+    height: 230px !important;
+    margin-bottom: 0;
+    margin-top: 0;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.tekzone-item .tekzone-product > li > p {
+    margin-top: 8px;
+    font-size: 14px;
+    padding: 0 16px;
+    float: left !important;
+}
+
+@media screen and (max-width: 845px) {
+    .container-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 640px;
+        margin: auto;
+        width: 100%;
+        height: 40px;
+        position: relative;
+        background: #101010;
+    }
+    .header-menu {
+        display: flex;
+        margin: auto;
+    
+    }
+    .content {
+        min-width: 680px;
+    }
+    .main-content{
+        display: none;
+    }
+    .item-product {
+        max-width: 690px;
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+    .main-item {
+        width: 95%;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        display: flex;
+        align-items: center;
+        margin: 15px auto 20px;
+    }
+    .product-item .main-product {
+        column-gap: 10px;
+        display: grid;
+        grid-auto-rows: minmax(min-content,max-content);
+        grid-template-columns: repeat(2,minmax(0,0.4fr));
+        row-gap: 10px;
+        padding: 10px;
+    }
+    .previous, .next {
+        display: none;
+    }
+}
