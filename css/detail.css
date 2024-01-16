@@ -5,6 +5,11 @@
 .productBoy-sub{
     background-color: #efefef !important;
 }
+.BanThich{
+    margin-bottom: 0;
+    text-align:  center;
+   font-size: 25px;
+}
 .imgCore{
     height:500px;
     box-shadow: 0px 4px 10px #007bff;

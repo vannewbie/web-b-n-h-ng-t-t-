@@ -38,6 +38,21 @@ function changeSlide(n) {
 }
 
 
+//onClick Ảnh
+
+const img = document.querySelector("img");
+img.addEventListener("click", function() {
+  window.location.href = "trang-moi.html";
+});
+
+
+
+
+
+
+
+
+
 
 
 

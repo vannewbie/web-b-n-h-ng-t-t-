@@ -1,0 +1,193 @@
+.head-nav .start,a:nth-child(3):hover~.fr {
+    left: 219px;
+    width: 53.36px;
+  }
+
+h1 {
+    color: #ccc;
+}
+
+.header-content {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    list-style: none;
+    
+}
+
+.sub {
+   width: 10%;
+   height: 10%;
+}
+
+.price {
+    float: left;
+}
+
+.shop-img {
+    object-fit: cover;
+}
+
+.content {
+    background-color: white;
+  padding-bottom: 20px;
+  margin: 130px 200px 110px;
+  border-radius: 10px;
+}
+
+.item-a {
+    text-decoration: none;
+    padding: 15px;
+}
+
+.search-box {
+    margin: 0px 30px;
+}
+
+.nav .nav-item .nav-link {
+    text-decoration: none;
+    padding: 15px 10px;
+    color: rgb(255, 251, 251);
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.nav .nav-item:hover .nav-link {
+    color: rgb(35, 54, 199);
+}
+
+.border {
+    margin: 15px 15px 15px 15px;
+    border-radius: 10px;
+    width: 30%;
+    align-content: center;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#add-btn {
+    cursor: pointer;
+}
+
+.border:hover {
+    background-color: #efefef;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.account-box {
+    color: white;
+    font-size: 20px;
+}
+
+.account-box .function {
+    text-decoration: none;
+    padding: 15px 10px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.pr-sh {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ee4d2d;
+    min-height: 10px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.product-text {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    justify-content: center;
+    display: flex;
+}
+
+.account-box .function-b:hover .function {
+    color: rgb(35, 54, 199);
+}
+
+.bg-footer {
+    width: auto;
+    padding: 100px;
+    background-color: black;
+    margin-top: 20px;
+}
+
+.example {
+    color: white;
+}
+
+
+input[type=text] {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    align-items: center;
+    padding: 12px 20px 12px 12px;
+  }
+
+  .game-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.sales {
+    min-height: 15px;
+    margin: 15px;
+}
+
+.cart {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    left: 300px;
+    height: 45%;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 14px;
+    z-index: -1;
+}
+
+.cart-button {
+    border: #7f7f7f;
+    background-color: #ccc;
+    border-style: solid;
+    border-width: 1px;
+    width: 3%;
+}
+
+.cart-button img {
+    max-width: 100%;
+   object-fit: fill;
+}
+
+.sub {
+    float: right;
+}
+
+.game-item {
+    padding: 20px 20px 0px 20px;
+    color: rgb(0, 0, 0);
+}
+
+.game-item img {
+    max-width: 100%;
+    object-fit: fill;
+}
+
+.game-item .product-text {
+    padding: 10px;
+}

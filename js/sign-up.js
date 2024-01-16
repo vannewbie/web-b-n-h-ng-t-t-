@@ -43,7 +43,7 @@ function handleSignUp(event) {
 
     // Sau khi thêm xong thì lưu lại vào LocalStorage
     localStorage.setItem("user-list", JSON.stringify(accountList))
-    window.location.pathname = "/src/sign-in.html";
+    window.location.pathname = "sign-in.html";
             return
 }
 
