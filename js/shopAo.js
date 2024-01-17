@@ -165,3 +165,4 @@ function searchGames(searchString) {
 searchInput.addEventListener("input", function (event) {
   searchGames(event.target.value)
 })
+

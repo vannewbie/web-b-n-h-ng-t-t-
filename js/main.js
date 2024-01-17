@@ -6,7 +6,7 @@ const close = document.querySelector('.fa-times')
 const imgs = document.querySelectorAll('.main-slider img')
 const dots = document.querySelectorAll('.dot')
 let currentImg = 0;
-const interval = 3000;
+const interval = 2000;
 let timer = setInterval(changeSlide, interval);
 
 
@@ -37,7 +37,6 @@ function changeSlide(n) {
   dots[currentImg].className += ' active';
 }
 
-
 //onClick Ảnh
 
 const img = document.querySelector("img");
@@ -45,17 +44,11 @@ img.addEventListener("click", function() {
   window.location.href = "trang-moi.html";
 });
 
+//onClick
 
-
-
-
-
-
-
-
-
-
-
+function openNewPage() {
+  window.open('cart.html');
+}
 
 
 

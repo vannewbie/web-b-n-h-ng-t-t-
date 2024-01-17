@@ -26,3 +26,16 @@ function updateTotal() {
     document.getElementById('txtTotal').innerHTML = totalString;
 }
 
+
+function deleteItem(itemId) {
+    var row = document.getElementById("input" + itemId).parentNode.parentNode;
+    row.parentNode.removeChild(row);
+    updateTotal();
+}
+
+// onClick
+const btnOrder = document.querySelector('.btnOrder');
+function DatHang() {
+  alert('Đặt hàng thành công!');
+}
+btnOrder.addEventListener('click', DatHang);

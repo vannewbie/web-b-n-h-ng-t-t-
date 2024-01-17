@@ -8,19 +8,12 @@
     <link rel="shortcut icon" href="QTV.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
-    <script src="./js/main.js"></script>
    
 
     <title>QTV shop bán đồ tết</title>
 
-    <script>
-        // Khởi tạo Swiper
-        const swiper = new Swiper(".main-slider", {
-          autoplay: true,
-        });
-    </script>
 
 </head>
 
@@ -44,16 +37,18 @@
     <form action="" class="search">
         <div class="content-input">
             <i class="fas fa-search"></i>
-            <input type="text" name="input" placeholder="Tìm kiếm sản phẩm" id="inputFiled">
+            <input type="text" name="input" placeholder="Tìm kiếm sản phẩm" id="inputFiled"> </input>
             <i class="fas fa-times"></i>
         </div>
     </form>
+    
     
     
     </header>
 
     <!-- section slider show -->
     <section class="main-content swiper mySwiper">
+        
         <div class="content">
        
             <ul class="header-menu">
@@ -65,26 +60,29 @@
 
           
         </div>
-        <div class="main-slider swiper-wrapper">
-            <img class="swiper-slide" src="./img/slide1.webp" alt="">
-            <img class="swiper-slide" src="./img/slide2.webp" alt="">
-            <img class="swiper-slide" src="./img/slide3.webp" alt="">
-            <img class="swiper-slide" src="./img/slide4.webp" alt="">
-            <img class="swiper-slide" src="./img/slide5.webp" alt="">
-            <img class="swiper-slide" src="./img/slide6.webp" alt="">
-            <img class="swiper-slide" src="./img/slide7.webp" alt="">
-        </div>
-
-
-        <div class="navigation-button">
-            <span class="dot active" onclick="changeSlide(0)"></span>
-            <span class="dot" onclick="changeSlide(1)"></span>
-            <span class="dot" onclick="changeSlide(2)"></span>
-            <span class="dot" onclick="changeSlide(3)"></span>
-            <span class="dot" onclick="changeSlide(4)"></span>
-            <span class="dot" onclick="changeSlide(5)"></span>
-            <span class="dot" onclick="changeSlide(6)"></span>
-        </div>
+        
+        
+            <div class="main-slider swiper-wrapper">
+                <img class="swiper-slide" src="./Slide/slide1.webp" alt="">
+                <img class="swiper-slide" src="./Slide/slide2.webp" alt="">
+                <img class="swiper-slide" src="./Slide/slide3.webp" alt="">
+                <img class="swiper-slide" src="./Slide/slide4.webp" alt="">
+                <img class="swiper-slide" src="./Slide/slide5.webp" alt="">
+                <img class="swiper-slide" src="./Slide/slide6.webp" alt="">
+                <img class="swiper-slide" src="./Slide/slide7.webp" alt="">
+            </div>
+    
+    
+            <div class="navigation-button">
+                <span class="dot active" onclick="changeSlide(0)"></span>
+                <span class="dot" onclick="changeSlide(1)"></span>
+                <span class="dot" onclick="changeSlide(2)"></span>
+                <span class="dot" onclick="changeSlide(3)"></span>
+                <span class="dot" onclick="changeSlide(4)"></span>
+                <span class="dot" onclick="changeSlide(5)"></span>
+                <span class="dot" onclick="changeSlide(6)"></span>
+            </div>
+        
 
     </section>
 
@@ -382,13 +380,10 @@
 
     </section>
 
-
-
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script src="./js/main.js"></script>
-
 
 </body>
 

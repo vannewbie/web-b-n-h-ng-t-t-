@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./image/QTV.png"/>
     <title>Áo dài</title>
-    <link rel="shortcut icon" href="./img/quanao1.png" />
+    <link rel="shortcut icon" href="QTV.png" />
     <link rel="stylesheet" href="./css/detail.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
@@ -17,7 +16,7 @@
  
     <link rel="stylesheet" href="./css/cart.css">
     <script src="./js/cart.js"></script>
-
+    
     <script>
         $(function () {
             $(".footer").load("footer.html");
@@ -65,7 +64,9 @@
     <div class="menu"></div>
     <div class="container">
         <h2 style="float: left;">Giỏ Hàng Của Bạn</h2>
-        <button class="btnOrder">Đặt Hàng</button>
+
+        <button class="btnOrder" onclick="DatHang()" >Đặt Hàng</button>
+
         <hr style="clear: both; width: 40%; margin-left:0px ;">
         <table class="table cart-table">
             <thead class="thead-light">
@@ -74,6 +75,7 @@
                 <th scope="col">Sản Phẩm</th>
                 <th scope="col">Số Lượng</th>
                 <th scope="col">Giá</th>
+                <th scope="col">Xoá</th>
               </tr>
             </thead>
             <tbody>
@@ -81,17 +83,26 @@
                   <th scope="row">1</th>
                   <td>
                       <a href="./InforAo1.html"><img src="./img/quanao1.png" alt=""></a>
+                      
                       <h4>Áo yếm</h4>
                       <p>Miễn phí giao hàng toàn quốc <br>
                           Giảm 59k cho đơn từ 1tr <br>
                           Đổi/Trả hàng trong vòng 60 ngày nếu không ứng ý sản phẩm</p>
+                        
+                          
                   </td>
+                  
                   <td>
                       <input id="input1" type="number" value="1" min="1" oninput="updateTotal()">
                   </td>
                   <td>
                       <h6>2.116.000₫</h6>
                   </td>
+
+                  <td>
+                    <div class="icondelete"  onclick="deleteItem(1)"> <i class="far fa-trash-alt deleteRac"></i></div>
+                  </td>
+
                 </tr>
                 <tr>
                   <th scope="row">2</th>
@@ -108,6 +119,11 @@
                   <td>
                       <h6>2.880.000đ</h6>
                   </td>
+
+                  <td>
+                    <div class="icondelete"  onclick="deleteItem(2)"> <i class="far fa-trash-alt deleteRac"></i></div>
+                  </td>
+                    
                 </tr>
                 
                 <tr>
@@ -126,6 +142,11 @@
                   <td>
                       <h6>1.700.000đ</h6>
                   </td>
+
+                  <td>
+                    <div class="icondelete"  onclick="deleteItem(3)"> <i class="far fa-trash-alt deleteRac"></i></div>
+                  </td>
+
                 </tr>
               </tbody>
           </table>
